@@ -32,6 +32,6 @@ monitors:
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: request.tinyforest.rocks
-    name: The request System
+  - id: request-tinyforest-rocks
+    name: The Request System
     url: 'https://request.tinyforest.rocks/'
