@@ -25,8 +25,16 @@ monitors:
     
   - id: request-tinyforest-rocks
     name: The Request System
-    description: 'Request will be down on Sunday the 28th @ 11am till 4pm for updates. This message will change once finished.' # default=empty
+    description: 'Request system will be down on Sunday the 28th @ 11am till 4pm for updates. This message will change once finished.' # default=empty
     url: 'https://request.tinyforest.rocks/login'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+    
+  - id: access-tinyforest-rocks
+    name: The Access System
+    description: 'Access system will be down on Sunday the 28th @ 11am till 4pm for updates. This message will change once finished.' # default=empty
+    url: 'https://access.tinyforest.rocks/'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
