@@ -17,7 +17,7 @@ settings:
 monitors:
   - id: plex-tinyforest-rocks
     name: The Tiny Plex
-    description: 'Plex will be down on Sunday the 28th @ 11am till 4pm for updates. This message will change once finished.' # default=empty
+    description: 'All good in the hood' # default=empty
     url: 'https://plex.tinyforest.rocks/web/index.html#!/'
     method: GET
     expectStatus: 200
@@ -25,7 +25,7 @@ monitors:
     
   - id: request-tinyforest-rocks
     name: The Request System
-    description: 'Request system will be down on Sunday the 28th @ 11am till 4pm for updates. This message will change once finished.' # default=empty
+    description: 'All good in the hood' # default=empty
     url: 'https://request.tinyforest.rocks/login'
     method: GET
     expectStatus: 200
@@ -33,7 +33,7 @@ monitors:
     
   - id: access-tinyforest-rocks
     name: The Access System
-    description: 'Access system will be down on Sunday the 28th @ 11am till 4pm for updates. This message will change once finished.' # default=empty
+    description: 'All good in the hood' # default=empty
     url: 'https://access.tinyforest.rocks/'
     method: GET
     expectStatus: 200
@@ -41,8 +41,16 @@ monitors:
 
   - id: mc-tinyforest-rocks
     name: TinyCraft in Space
-    description: 'The Minecraft server will be down on Sunday the 28th @ 11am till 4pm for updates. This message will change once finished.' # default=empty
+    description: 'All good in the hood' # default=empty
     url: 'http://mc.tinyforest.rocks/'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+
+      - id: pal-tinyforest-rocks
+    name: TinyPals in Hell
+    description: 'All good in the hood' # default=empty
+    url: 'http://pal.tinyforest.rocks/'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
