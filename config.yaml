@@ -47,7 +47,7 @@ monitors:
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
 
-      - id: pal-tinyforest-rocks
+  - id: pal-tinyforest-rocks
     name: TinyPals in Hell
     description: 'All good in the hood' # default=empty
     url: 'http://pal.tinyforest.rocks/'
