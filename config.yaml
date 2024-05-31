@@ -25,7 +25,7 @@ monitors:
     
   - id: request-tinyforest-rocks
     name: The Request System
-    description: 'All good in the hood' # default=empty
+    description: 'All good in the hood.' # default=empty
     url: 'https://request.tinyforest.rocks/login'
     method: GET
     expectStatus: 200
