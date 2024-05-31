@@ -38,19 +38,3 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
-
-  - id: mc-tinyforest-rocks
-    name: TinyCraft in Space
-    description: 'All good in the hood' # default=empty
-    url: 'http://mc.tinyforest.rocks/'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
-
-  - id: pal-tinyforest-rocks
-    name: TinyPals in Hell
-    description: 'All good in the hood' # default=empty
-    url: 'http://pal.tinyforest.rocks/'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
