@@ -6,9 +6,9 @@ settings:
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
+  notAllmonitorsOperational: 'Only Kinda Broke'
   monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
+  monitorLabelNotOperational: 'We Fucked'
   monitorLabelNoData: 'No data'
   dayInHistogramNoData: 'No data'
   dayInHistogramOperational: 'All good'
@@ -38,3 +38,12 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
+
+     - id: ftb-tinyforest-rocks
+    name: FTB Minecraft Server
+    description: 'All good in the hood' # default=empty
+    url: 'https://mc.tinyforest.rocks/'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+
