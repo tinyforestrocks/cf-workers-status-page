@@ -1,6 +1,6 @@
 settings:
-  title: 'Tiny Status Page'
-  url: 'https://status.tinyforest.rocks' # used for Slack messages
+  title: 'Status Page'
+  url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -15,27 +15,25 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: plex-tinyforest-rocks
-    name: The Tiny Plex
-    description: 'All good in the hood.' # default=empty
-    url: 'https://plex.tinyforest.rocks/web/index.html#!/'
+  - id: workers-cloudflare-com # unique identifier
+    name: workers
+    description: 'You write code. They handle the rest.' # default=empty
+    url: 'https://workers.cloudflare.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
+  - id: www-cloudflare-com
+    name: wwwm
+    description: 'Built for anything connected to the Internet.'
+    url: 'https://www.cloudflare.com'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: request-tinyforest-rocks
-    name: The Request System
-    description: 'All good in the hood.' # default=empty
-    url: 'https://request.tinyforest.rocks/login'
+  - id: blog-m
+    name: The Cloudflare Blog
+    url: 'https://blog.cloudflare.com/'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
-    
-- id: access-tinyforest-rocks
-    name: The Access System
-    description: 'All good in the hood.' # default=empty
-    url: 'https://access.tinyforest.rocks/'
-    method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
-    
