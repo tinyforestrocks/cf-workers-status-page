@@ -18,7 +18,7 @@ monitors:
   - id: plex-tinyforest-rocks # unique identifier
     name: Tinyplex 3.0
     description: 'Coming soon version 5.0' # default=empty
-    url: 'https://plex.tinyforest.rocks/' # URL to fetch
+    url: 'https://plex.tinyforest.rocks/web/index.html#!/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -27,7 +27,7 @@ monitors:
   - id: request-tinyforest-rocks
     name: Plex Request System
     description: 'All good in the hood.'
-    url: 'https://request.tinyforest.rocks/'
+    url: 'https://request.tinyforest.rocks/login'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
