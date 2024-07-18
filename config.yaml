@@ -2,7 +2,7 @@ settings:
   title: 'Tinyforest Status Page'
   url: 'https://status.tinyforest.rocks/' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 30 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -33,8 +33,9 @@ monitors:
     linkable: true # allows the title to be a link, default=true
 
   - id: access-tinyforest-roks
-    name: Access System Wizard
+    name: The Access System
     url: 'https://access.tinyforest.rocks/'
+    description: 'All good in the hood.'
     method: GET
     expectStatus: 200
     linkable: true
