@@ -16,8 +16,8 @@ settings:
 
 monitors:
   - id: plex-tinyforest-rocks # unique identifier
-    name: Tinyplex 3.0
-    description: 'Coming soon version 5.0' # default=empty
+    name: Tinyplex 5.0
+    description: 'It Came!' # default=empty
     url: 'https://plex.tinyforest.rocks/web/index.html#!/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
