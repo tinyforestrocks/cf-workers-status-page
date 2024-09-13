@@ -15,7 +15,7 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: plex-tinyforest-rocks # unique identifier
+  - id: plex-tinyforest-rock # unique identifier
     name: Tinyplex 5.0
     description: 'It Came!' # default=empty
     url: 'https://plex.tinyforest.rocks/web/index.html#!/' # URL to fetch
@@ -24,7 +24,7 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
-  - id: request-tinyforest-rocks
+  - id: request-tinyforest-rock
     name: Plex Request System
     description: 'All good in the hood.'
     url: 'https://request.tinyforest.rocks/login'
@@ -32,7 +32,7 @@ monitors:
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: access-tinyforest-rocks
+  - id: access-tinyforest-rock
     name: The Access System
     url: 'https://access.tinyforest.rocks/'
     description: 'All good in the hood.'
